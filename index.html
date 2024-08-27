@@ -1,40 +1,89 @@
 <!DOCTYPE html>
-<!-- * Defines the document type and version of HTML -->
 
 <html lang="en">
-  <!-- * The root element of the HTML document. The 'lang' attribute sets the language of the content -->
-
   <head>
-    <!-- * Contains metadata and links to resources like stylesheets or scripts -->
-
     <meta charset="UTF-8" />
-    <!-- * Sets the character encoding for the document, ensuring it displays correctly -->
 
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0" />
-    <!-- * Ensures the page is responsive by controlling its width and scaling on different devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- * Links stylesheets to the document  -->
-    <link
-      rel="stylesheet"
-      href="./styles.css" />
+    <link rel="stylesheet" href="./styles.css" />
 
     <title>Hello There</title>
-    <!-- * Sets the title of the webpage, which appears in the browser tab -->
   </head>
 
   <body>
-    <!-- * Contains the main content of the HTML document that users will see in the browser -->
-
-    <h1>Hello There</h1>
-    <!-- * A top-level heading element, typically used for the main title or header -->
-
-    <p>This is a simple HTML file. It doesn't do much, but it's a start.</p>
-    <!-- * Defines a paragraph of text -->
-
+    <header>
+      <h1>Welcome to My Website</h1>
+      <p>Your go-to resource for web development</p>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <section id="about">
+        <h2>About us</h2>
+        <p>
+          We are a team of passionate developers dedicated to providing he best
+          tutorials and resources for web development.
+        </p>
+        <h3 id="#Services">Our Services</h3>
+        <ul>
+          <li>Web Development</li>
+          <li>Design and UX</li>
+          <li>SEO Optimisation</li>
+          <li>Content Creation</li>
+        </ul>
+        <p>We also offer the following packages:</p>
+      </section>
+      <section id="services">
+        <table>
+          <tr>
+            <td>Package</td>
+            <td>Features</td>
+            <td>Price</td>
+          </tr>
+          <tr>
+            <td>Basic</td>
+            <td>Basic Website Design</td>
+            <td>$299</td>
+          </tr>
+          <tr>
+            <td>Standard</td>
+            <td>Website Design + SEO</td>
+            <td>$499</td>
+          </tr>
+          <tr>
+            <td>Premium</td>
+            <td>All-Inclusive Package</td>
+            <td>$799</td>
+          </tr>
+        </table>
+      </section>
+      <section id="gallery">
+        <h2 id="Gallery">Gallery</h2>
+        <figure>
+          <img src="https://placehold.it/800x400" alt="Assignment Picture" />
+          <figcaption>Our latest web design project</figcaption>
+        </figure>
+        <figure>
+          <img src="https://placehold.it/800x400" alt="Assignment Picture" />
+          <figcaption>Responsive design on multiple devices</figcaption>
+        </figure>
+      </section>
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <p>
+          If you have any questions or would like to work with us, feel free to
+          reach out via email or social media.
+        </p>
+        <p><u>Email:info@example.com</u></p>
+        <p><u>Follow us on: Twitter, Facebook, Instagram</u></p>
+      </section>
+    </main>
+    <footer>© 2024 My Website. All Rights reserved.</footer>
     <script src="./script.js"></script>
-    <!-- * Links to an external JavaScript file for adding interactivity to the page -->
   </body>
 </html>
-<!-- * The closing tag for the root element of the HTML document -->
